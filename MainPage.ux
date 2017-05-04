@@ -1,0 +1,20 @@
+<Page ux:Class="MainPage">
+	<DockPanel Margin="10">
+		<DockPanel Dock="Top" Height="50">
+			<TextBox Value="{searchTerm}"/>
+			<Button Text="Search" Clicked="{search}" Dock="Right"/>
+		</DockPanel>
+		<Panel>
+			<ScrollView>
+				<StackPanel ItemSpacing="10">
+					<Each Items="{articles}">
+						<StackPanel ItemSpacing="10" Color="White" Padding="10" Clicked="{showArticle}">
+							<Text Value="{headline.main}" TextWrapping="Wrap"/>
+							<Text Value="{lead_paragraph}" FontSize="14" TextWrapping="Wrap"/>
+						</StackPanel>
+					</Each>
+				</StackPanel>
+			</ScrollView>
+		</Panel>
+	</DockPanel>
+</Page>

@@ -1,0 +1,7 @@
+<Page ux:Class="ArticlePage">
+	<JavaScript File="ArticlePage.js" />
+
+	<Text Value="{article.lead_paragraph}"
+		  Alignment="Center"
+		  TextWrapping="Wrap"/>
+</Page>

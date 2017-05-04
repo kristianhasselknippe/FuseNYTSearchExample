@@ -1,0 +1,8 @@
+<App Background="#ddd">
+	<JavaScript File="MainView.js" />
+	<Router ux:Name="router"/>
+	<Navigator DefaultPath="mainPage">
+		<MainPage ux:Template="mainPage" />
+		<ArticlePage ux:Template="articlePage" />
+	</Navigator>
+</App>
